@@ -6,4 +6,4 @@ version = "0.1.0"
 
 [dependencies]
 afl = "0.4.0"
-grass = { git = "https://github.com/connorskees/grass" }
+grass = { git = "https://github.com/connorskees/grass", default-features = false }
