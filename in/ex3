@@ -1,0 +1,26 @@
+@use "sass:map";
+
+@function two-sum($nums, $target) {
+  $map: ();
+
+  @for $i from 1 through length($nums) {
+    $num: nth($nums, $i);
+
+    $diff: $target - $num;
+
+    @if map-get($map, $diff) {
+      @return map-get($map, $diff) - 1 $i - 1;
+    } @else {
+      $map: map.set($map, $num, $i);
+    }
+  }
+
+  @return null;
+}
+
+a {
+  color: two-sum(2 7 11 15, 9);
+  color: two-sum(3 2 4, 6);
+  color: two-sum(3 3, 6);
+  color: two-sum(3 2, 6);
+}

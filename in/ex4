@@ -1,0 +1,9 @@
+a {
+         color: hue(red);
+        color: saturation(red);
+        color: lightness(red);
+        color: change-color(red, $lightness: 95%);
+        color: red(change-color(red, $lightness: 95%));
+        color: blue(change-color(red, $lightness: 95%));
+        color: green(change-color(red, $lightness: 95%));
+    }

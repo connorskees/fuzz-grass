@@ -1,0 +1,9 @@
+@mixin foo() {
+        a {}
+    }
+
+    a {
+        color: {
+            @include foo();
+        }
+    }

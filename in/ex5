@@ -1,0 +1,11 @@
+@media (min-width: 1337px) {
+        .foo {
+            content: baz;
+        }
+
+        @at-root (without: media) {
+            .foo {
+                content: bar;
+            }
+        }
+    }
